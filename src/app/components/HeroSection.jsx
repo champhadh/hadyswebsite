@@ -24,7 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Hady W.",
                 1000,
-                "a CS Major.",
+                "a CS Major @ WLU.",
                 1000,
                 "a Security Analyst.",
                 1000,
@@ -67,7 +67,7 @@ const HeroSection = () => {
             <Image
               src="/images/hero-image.png"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={150}
+              width={2}
               height={150}
             />
           </div>
