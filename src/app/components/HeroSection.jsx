@@ -26,9 +26,9 @@ const HeroSection = () => {
                 1000,
                 "A CS Major.",
                 1000,
-                "A Software Engineer.",
+                "A Security Analyst.",
                 1000,
-                "A Data Engineer.",
+                "A Security Auditor.",
                 1000,
               ]}
               wrapper="span"
@@ -63,13 +63,13 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative">
+          <div className="rounded-full w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] relative">
             <Image
               src="/mnt/data/image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </div>
         </motion.div>
