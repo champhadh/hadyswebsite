@@ -9,8 +9,7 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Jr. Analyst (Part Time) - Zartek Global Cybersecurity Network</li>
-        <li>Data Analyst Intern - PowerOptix Facility Management Corp.</li>
+        <li>Jr. Analyst - Zartek Global Cybersecurity Network</li>
       </ul>
     ),
   },
@@ -49,38 +48,31 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" alt="description of image" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          alt="description of image"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Hi, I&apos;m Hady Wehbe, a Software and Data Engineering student at Wilfrid Laurier University, Canada. Passionate about technological solutions, my interests lie in solving complex problems using data optimization and augmentation. My experiences and projects have further enhanced my experience through developing analytic-driven strategies with an emphasis on identifying threats and refining systematic solutions.
-
-          Beyond Academics, I&apos;m an avid soccer fan and bodybuilding enthusiast, valuing strategy and discipline. Feel free to connect with me to learn more about my skills and experiences or if you&apos;re looking for advice on bodybuilding!
-
-          I&apos;m currently seeking new opportunities for Summer 2024, hoping to gain more knowledge on integrated data solutions.
+            Hi, I&apos;m Hady Wehbe, a Software and Data Engineering student at Wilfrid Laurier University, Canada. Passionate about technological solutions, my interests lie in solving complex problems using data optimization and augmentation. My experiences and projects have further enhanced my experience through developing analytic-driven strategies with an emphasis on identifying threats and refining systematic solutions.
+            <br />
+            Beyond Academics, I&apos;m an avid soccer fan and bodybuilding enthusiast, valuing strategy and discipline. Feel free to connect with me to learn more about my skills and experiences or if you&apos;re looking for advice on bodybuilding!
+            <br />
+            I&apos;m currently seeking new opportunities for Summer 2024, hoping to gain more knowledge on integrated data solutions.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "v"}
-            >
-              {" "}
-              Experience{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
+            {TAB_DATA.map((tabData) => (
+              <TabButton
+                key={tabData.id}
+                selectTab={() => handleTabChange(tabData.id)}
+                active={tab === tabData.id}
+              >
+                {tabData.title}
+              </TabButton>
+            ))}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
