@@ -57,7 +57,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Hi, I am Hady Wehbe. I am currently studying Computer Science at Wilfrid Laurier University. My courses have given me a broad knowledge of applying various technical skills and innovative solutions in the digital world.
+            Hi, I am Hady Wehbe. I am currently studying Computer Science at Wilfrid Laurier University. My courses have given me a broad knowledge of applying various technical skills and innovative solutions in the digital world.
+            <br />
+            Driven by a passion for cybersecurity, I am committed to safeguarding against cyber warfare and diminishing unethical acts. I aim to create a safer digital world through innovative security measures and proactive support. Let us connect and collaborate to build a secure cyberspace.
             <br />
             I&apos;m currently seeking new opportunities for Winter 2025, hoping to gain more knowledge on integrated data solutions.
           </p>
