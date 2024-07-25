@@ -13,7 +13,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="col-span-7 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-2xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-white bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
@@ -61,11 +61,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-5 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] relative">
+          <div className="rounded-full w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] relative -ml-10">
             <Image
-              src="/images/hero-image.png"
+              src="/mnt/data/image.png"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={250}
               height={250}
