@@ -57,11 +57,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Hi, I&apos;m Hady Wehbe, a Software and Data Engineering student at Wilfrid Laurier University, Canada. Passionate about technological solutions, my interests lie in solving complex problems using data optimization and augmentation. My experiences and projects have further enhanced my experience through developing analytic-driven strategies with an emphasis on identifying threats and refining systematic solutions.
+          Hi, I am Hady Wehbe. I am currently studying Computer Science at Wilfrid Laurier University. My courses have given me a broad knowledge of applying various technical skills and innovative solutions in the digital world.
             <br />
-            Beyond Academics, I&apos;m an avid soccer fan and bodybuilding enthusiast, valuing strategy and discipline. Feel free to connect with me to learn more about my skills and experiences or if you&apos;re looking for advice on bodybuilding!
-            <br />
-            I&apos;m currently seeking new opportunities for Summer 2024, hoping to gain more knowledge on integrated data solutions.
+            I&apos;m currently seeking new opportunities for Winter 2025, hoping to gain more knowledge on integrated data solutions.
           </p>
           <div className="flex flex-row justify-start mt-8">
             {TAB_DATA.map((tabData) => (
