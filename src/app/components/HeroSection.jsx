@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-white text-base sm:text-lg mb-6 lg:text-xl">
-            Explore through my website to learn more about me! 👋
+            Explore through my website to learn more about me and my achievements! 👋
           </p>
           <div>
             <Link
@@ -67,8 +67,8 @@ const HeroSection = () => {
             <Image
               src="/images/hero-image.png"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
             />
           </div>
         </motion.div>
