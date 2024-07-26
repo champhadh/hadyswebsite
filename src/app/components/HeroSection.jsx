@@ -24,7 +24,10 @@ const HeroSection = () => {
               sequence={[
                 "Hady W.",
                 1000,
-                "a CS Major @ WLU.",
+                <>
+                  a CS Major @{" "}
+                  <span className="text-purple-500">WLU</span>.
+                </>,
                 1000,
                 "a Security Analyst.",
                 1000,
