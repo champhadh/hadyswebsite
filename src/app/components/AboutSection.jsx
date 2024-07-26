@@ -27,9 +27,27 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Languages: Python, Java, C/C++, SQL, JavaScript, HTML/CSS</li>
-        <li>Google Professional Cloud Developer</li>
-        <li>Frameworks/Tools: React, Node.js, Flask, BeautifulSoup, ExpressJS, Power BI, Tableau</li>
+        <li>Languages: Python, Java, C/C++, SQL, JavaScript, HTML/CSS, Ruby, PHP</li>
+        <li>Frameworks/Tools: Tailwind CSS, Google Sheets, Power BI, Wireshark, Splunk, Bash, Linux + Linux Distributions </li>
+        <li>Cybersecurity Skills: SIEM Tools, Cybersecurity Frameworks, Incident Response, Vulnerability Assessment, Network Security, Cryptography, Cloud Computing</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+            <a 
+              href="https://coursera.org/share/e4a7a989f3af4de30c261fea455edd3b" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-orange-500"
+            >
+              Google Cybersecurity
+            </a>
+        </li>
       </ul>
     ),
   },
