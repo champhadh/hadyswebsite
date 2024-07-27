@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         from: process.env.GMAIL_USER, // Your email address
         to: 'hadywehbe98@gmail.com', // Your recipient address
         subject: `Message from ${email}: ${subject}`, // Include sender's email in the subject
-        text: message, // plain text body
+        text: message, // Plain text body
         replyTo: email, // Set the reply-to address to the sender's email
       });
 
