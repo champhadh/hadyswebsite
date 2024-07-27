@@ -1,9 +1,4 @@
-"use client";
-import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
+import React, { useState } from 'react';
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -20,12 +15,12 @@ const EmailSection = () => {
     };
 
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpoint = '/api/send';
 
     const options = {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSONdata,
     };
@@ -38,40 +33,30 @@ const EmailSection = () => {
         setEmailSubmitted(true);
         setError(null);
       } else {
-        throw new Error(resData.message || "Failed to send message");
+        setEmailSubmitted(false);
+        setError(resData.message);
       }
     } catch (err) {
       setEmailSubmitted(false);
-      setError(err.message);
+      setError('Error sending email');
     }
   };
 
   return (
-    <section
-      id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
-    >
+    <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s Connect
-        </h5>
+        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I&apos;m currently looking for new opportunities! My inbox is always
-          open, whether you&apos;re looking to learn more about me or just want
-          to say hi, I&apos;ll try my best to get back to you!
+          I'm currently looking for new opportunities! My inbox is always open, whether you're looking to learn more about me or just want to say hi, I'll try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/champhadh" target="_blank">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/hady-wehbe-bab11b197/"
-            target="_blank"
-          >
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+          <a href="https://github.com/champhadh" target="_blank" rel="noopener noreferrer">
+            <img src="/github-icon.svg" alt="Github Icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/hady-wehbe-bab11b197/" target="_blank" rel="noopener noreferrer">
+            <img src="/linkedin-icon.svg" alt="Linkedin Icon" />
+          </a>
         </div>
       </div>
       <div>
@@ -80,10 +65,7 @@ const EmailSection = () => {
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
+              <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
                 Your email
               </label>
               <input
@@ -96,10 +78,7 @@ const EmailSection = () => {
               />
             </div>
             <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
+              <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
                 Subject
               </label>
               <input
@@ -112,10 +91,7 @@ const EmailSection = () => {
               />
             </div>
             <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
+              <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
                 Message
               </label>
               <textarea
