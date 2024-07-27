@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "ReactJS",
+    description: "ReactJS. Tailwind CSS, STMP, Postman,  ",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
