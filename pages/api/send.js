@@ -22,10 +22,11 @@ export default async function handler(req, res) {
     try {
       // Send the email
       await transporter.sendMail({
-        from: email, // sender address
-        to: process.env.RECIPIENT_EMAIL, // recipient address
-        subject: subject, // subject line
+        from: process.env.GMAIL_USER, // Your email address
+        to: 'hadywehbe98@gmail.com', // Your recipient address
+        subject: `Message from ${email}: ${subject}`, // Include sender's email in the subject
         text: message, // plain text body
+        replyTo: email, // Set the reply-to address to the sender's email
       });
 
       res.status(200).json({ message: 'Email sent successfully!' });
