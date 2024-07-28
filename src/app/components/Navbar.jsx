@@ -15,6 +15,10 @@ const navLinks = [
     path: "#projects",
   },
   {
+    title: "Blog",
+    path: "/blog",  // Added Blog link
+  },
+  {
     title: "Contact",
     path: "#contact",
   },
